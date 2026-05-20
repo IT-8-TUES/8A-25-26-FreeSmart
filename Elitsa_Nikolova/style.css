@@ -1,7 +1,8 @@
   :root {
-    --header-text: #6F6155;
+    --main-grey-text: #6F6155;
     --main-background: #F7F6F4;
     --main-black-text: #201A15;
+    --main-green: #03462C;
   }
  
  body {
@@ -58,7 +59,7 @@
 
     .nav-links a { 
       text-decoration: none; 
-      color: var(--header-text);
+      color: var(--main-grey-text-text);
       font-size: 0.95rem; 
       font-weight: 500; 
       transition: color 0.2s;
@@ -108,7 +109,7 @@
   padding: 12px 24px;
   display: block;
   font-size: 0.95rem;
-  color: var(--header-text);
+  color: var(--main-grey-text);
   transition: all 0.2s ease;
 }
 
@@ -119,4 +120,87 @@
 
 .dropdown:hover .dropdown-content {
   display: block; 
+}
+
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 75vh; /* Takes up 75% of the screen height */
+  padding: 60px 20px;
+  position: relative;
+  
+  /* 1. THE TRICK: A gradient overlay that fades the image to white at the bottom */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, var(--main-background) 95%), 
+              url('../Elitsa_Nikolova/images/hero-concert.jpg');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px; /* Perfectly spaces out the title, subtitle, and button */
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--main-black-text);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.highlight-green {
+  color: var(--main-green); 
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--main-grey-text);
+  line-height: 1.6;
+  max-width: 620px;
+  margin: 0;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--main-green);
+  color: white;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 14px rgba(4, 67, 44, 0.2);
+  transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #155840;
+  transform: translateY(-2px); /* Lifts up slightly */
+  box-shadow: 0 6px 20px rgba(4, 67, 44, 0.3);
+}
+
+.button-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+/* Makes the arrow shift right slightly when hovering over the button */
+.cta-button:hover .button-arrow {
+  transform: translateX(4px);
+}
+
+.a{
+  height: 1000px;
 }
