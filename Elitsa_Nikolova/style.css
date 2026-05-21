@@ -18,13 +18,18 @@
       padding: 18px 40px;
       background-color: white;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
     } 
     
     .header-content {
       display: flex;
       justify-content: space-between;
       min-width: 750px;
-      max-width: 1200px;
+      max-width: 1000px;
       width: 100%;
     }
 
@@ -128,13 +133,17 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 75vh; /* Takes up 75% of the screen height */
+  min-height: 75vh;
   padding: 60px 20px;
   position: relative;
   
-  /* 1. THE TRICK: A gradient overlay that fades the image to white at the bottom */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, var(--main-background) 95%), 
-              url('../Elitsa_Nikolova/images/hero-concert.jpg');
+background: linear-gradient(
+              to bottom, 
+              rgba(255, 255, 255, 0.6) 0%,
+              rgba(255, 255, 255, 0.4) 10%,
+              var(--main-background) 95%
+            ), 
+            url('../Elitsa_Nikolova/images/hero-concert.jpg');
   
   background-size: cover;
   background-position: center;
@@ -146,7 +155,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px; /* Perfectly spaces out the title, subtitle, and button */
+  gap: 24px;
 }
 
 .hero-title {
@@ -170,7 +179,7 @@
   margin: 0;
 }
 
-.cta-button {
+.start-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -185,7 +194,7 @@
   transition: all 0.2s ease;
 }
 
-.cta-button:hover {
+.start-button:hover {
   background-color: #155840;
   transform: translateY(-2px); /* Lifts up slightly */
   box-shadow: 0 6px 20px rgba(4, 67, 44, 0.3);
@@ -197,10 +206,6 @@
 }
 
 /* Makes the arrow shift right slightly when hovering over the button */
-.cta-button:hover .button-arrow {
+.start-button:hover .button-arrow {
   transform: translateX(4px);
-}
-
-.a{
-  height: 1000px;
 }
