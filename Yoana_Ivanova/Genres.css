@@ -1,0 +1,57 @@
+ :root {
+    --main-grey-text: #6F6155;
+    --main-background: #F7F6F4;
+    --main-black-text: #201A15;
+    --main-green: #03462C;
+  }/* Base Page Reset & Typography */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--main-black-text);
+    background-color: var(--main-background);
+    line-height: 1.5;
+}
+
+/* Rock Hero Banner Section */
+.hero-section {
+    background-color: #f5dfcb; /* Matches the soft peach/beige background color */
+    padding: 90px 6%;          /* Generous vertical and horizontal spacing */
+}
+
+.hero-container {
+    max-width: 680px;          /* Constrains the text width to match the image layout */
+}
+
+.hero-title {
+    font-size: 4.5rem;         /* Large, impactful header text */
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    letter-spacing: -1px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--main-grey-text);           
+    margin: 0;
+}
+
+/* Famous Artists Section Heading */
+.artists-section {
+    padding: 60px 6% 20px 6%;
+    background-color: var(--main-background);
+}
+
+.artists-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.artists-subtitle {
+    font-size: 1.15rem;
+    color: var(--main-grey-text);
+    margin: 0;
+}
