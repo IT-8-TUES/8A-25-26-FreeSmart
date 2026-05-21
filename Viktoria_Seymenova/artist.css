@@ -20,10 +20,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   background: var(--main-background);
   color: var(--main-black-text);
-  font-family: var(--font-body);
   font-size: 17px;
   line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
+ 
 }
 
 img { display: block; max-width: 100%; }
@@ -69,7 +68,6 @@ a { text-decoration: none; color: inherit; }
 }
 
 .artist-name {
-  font-family: var(--font-display);
   font-size: clamp(52px, 7vw, 96px);
   font-weight: 900;
   text-align: left;
@@ -153,7 +151,6 @@ a { text-decoration: none; color: inherit; }
 }
 
 .detail-card h2 {
-  font-family: var(--font-display);
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 14px;
@@ -178,7 +175,6 @@ a { text-decoration: none; color: inherit; }
 }
 
 .records-header h2 {
-  font-family: var(--font-display);
   font-size: clamp(28px, 4vw, 40px);
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -222,7 +218,7 @@ a { text-decoration: none; color: inherit; }
 .album-card:hover .album-cover img { transform: scale(1.05); }
 
 .album-title {
-  font-family: var(--font-display);
+
   font-size: 16px;
   font-weight: 700;
   line-height: 1.3;
