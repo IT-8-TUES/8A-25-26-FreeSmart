@@ -1,6 +1,4 @@
-
 :root {
-  
   --border: #d4cfc5;
   --shadow: 0 4px 24px rgba(0,0,0,0.08);
   --radius: 12px;
@@ -12,7 +10,6 @@
   --card-text: #daded7;
   --border: #d4cfc5;
 }
-
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -43,8 +40,7 @@ a { text-decoration: none; color: inherit; }
   gap: 6px;
   font-size: 14px;
   color: var(--main-grey-text);
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 48px;
   transition: color 0.2s;
 }
 .back-link:hover { color: var(--main-black-text); }
@@ -64,28 +60,22 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.15em;
   color: var(--main-green);
   text-transform: uppercase;
-  text-align: left;
-  margin-top: 60px;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 
-.artist-name {
+.genre-name {
   font-family: var(--font-display);
   font-size: clamp(52px, 7vw, 96px);
   font-weight: 900;
-  text-align: left;
   line-height: 1.05;
   letter-spacing: -2px;
-  color: var(-main-black-text);
   margin-bottom: 16px;
-  
 }
 
 .tagline {
   font-size: 17px;
-  text-align: center;
   color: var(--main-grey-text);
-  max-width: 540px;
+  text-align: left;
 }
 
 
@@ -104,7 +94,6 @@ a { text-decoration: none; color: inherit; }
 }
 
 .bio-text p {
-  color: var(--main-black-text);
   margin-bottom: 24px;
   font-size: 16.5px;
   line-height: 1.8;
@@ -112,8 +101,6 @@ a { text-decoration: none; color: inherit; }
 .bio-text p:last-child { margin-bottom: 0; }
 
 .bio-image {
-  position: sticky;
-  top: 24px;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -123,8 +110,6 @@ a { text-decoration: none; color: inherit; }
   width: 100%;
   height: 480px;
   object-fit: cover;
-  object-position: center top;
-  display: block;
   transition: transform 0.5s ease;
 }
 .bio-image:hover img { transform: scale(1.03); }
@@ -141,8 +126,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .detail-card {
-  
-  background: var(--main-green);
+  background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 36px;
@@ -155,30 +139,29 @@ a { text-decoration: none; color: inherit; }
 
 .detail-card h2 {
   font-family: var(--font-display);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 14px;
-  color: var(--card-text);
 }
 
 .detail-card p {
   font-size: 15.5px;
-  color: var(--card-text);
+  color: var(--main-grey-text);
   line-height: 1.75;
 }
 
 
-.records {
+.artists {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.7s ease 0.45s forwards;
 }
 
-.records-header {
+.artists-header {
   margin-bottom: 36px;
 }
 
-.records-header h2 {
+.artists-header h2 {
   font-family: var(--font-display);
   font-size: clamp(28px, 4vw, 40px);
   font-weight: 700;
@@ -186,51 +169,48 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 8px;
 }
 
-.records-header p {
-
+.artists-header p {
   color: var(--main-grey-text);
   font-size: 15px;
 }
 
-.records-grid {
+.artists-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 
-.album-card {
+.artist-card {
   cursor: pointer;
-  transition: transform 0.25s, box-shadow 0.25s;
+  transition: transform 0.25s;
 }
-.album-card:hover { transform: translateY(-4px); }
+.artist-card:hover { transform: translateY(-4px); }
 
-.album-cover {
+.artist-image {
   border-radius: var(--radius);
   overflow: hidden;
   aspect-ratio: 1;
-  background: #ccc;
   margin-bottom: 14px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 
-.album-cover img {
+.artist-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
-.album-card:hover .album-cover img { transform: scale(1.05); }
+.artist-card:hover .artist-image img { transform: scale(1.05); }
 
-.album-title {
+.artist-name {
   font-family: var(--font-display);
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.3;
   margin-bottom: 4px;
 }
 
-.album-meta {
+.artist-meta {
   font-size: 13px;
   color: var(--main-grey-text);
 }
@@ -241,15 +221,17 @@ a { text-decoration: none; color: inherit; }
 }
 
 
+@media (max-width: 1000px) {
+  .artists-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 900px) {
   .bio-body { grid-template-columns: 1fr; }
-  .bio-image { position: static; }
   .details { grid-template-columns: 1fr; }
-  .records-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 600px) {
   .page { padding: 24px 20px 60px; }
-  .records-grid { grid-template-columns: 1fr; }
-  .artist-name { letter-spacing: -1px; }
+  .artists-grid { grid-template-columns: 1fr 1fr; }
+  .genre-name { letter-spacing: -1px; }
 }
