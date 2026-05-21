@@ -157,7 +157,7 @@ background: linear-gradient(
 }
 
 .card-content {
-  padding-left: 24px;
+  padding-left: 24px;/*fix padding to one line*/
   padding-right: 24px;
   padding-top: 10px;
   padding-bottom: 24px;
