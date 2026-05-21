@@ -14,23 +14,23 @@ body {
 }
 
 /* Rock Hero Banner Section */
-.hero-section {
+.hero-section-genre {
     background-color: #f5dfcb; /* Matches the soft peach/beige background color */
     padding: 90px 6%;          /* Generous vertical and horizontal spacing */
 }
 
-.hero-container {
+.hero-container-genre {
     max-width: 680px;          /* Constrains the text width to match the image layout */
 }
 
-.hero-title {
+.hero-title-genre {
     font-size: 4.5rem;         /* Large, impactful header text */
     font-weight: 700;
     margin: 0 0 24px 0;
     letter-spacing: -1px;
 }
 
-.hero-description {
+.hero-description-genre {
     font-size: 1.2rem;
     line-height: 1.6;
     color: var(--main-grey-text);           
@@ -38,19 +38,19 @@ body {
 }
 
 /* Famous Artists Section Heading */
-.artists-section {
+.artists-section-genre {
     padding: 60px 6% 20px 6%;
     background-color: var(--main-background);
 }
 
-.artists-title {
+.artists-title-genre {
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0 0 10px 0;
     letter-spacing: -0.5px;
 }
 
-.artists-subtitle {
+.artists-subtitle-genre {
     font-size: 1.15rem;
     color: var(--main-grey-text);
     margin: 0;

@@ -79,7 +79,7 @@ background: linear-gradient(
 
 .start-button:hover {
   background-color: #155840;
-  transform: translateY(-2px); /* Lifts up slightly */
+  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(4, 67, 44, 0.3);
 }
 
@@ -88,7 +88,6 @@ background: linear-gradient(
   transition: transform 0.2s ease;
 }
 
-/* Makes the arrow shift right slightly when hovering over the button */
 .start-button:hover .button-arrow {
   transform: translateX(4px);
 }
