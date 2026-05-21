@@ -1,9 +1,9 @@
 
 :root {
-  --bg: #dd1025;
-  --text: #000000;
-  --text-muted: #6b6b6b;
-  --green: #1e4d2b;
+  --main-grey-text: #6F6155;
+  --main-background: #F7F6F4;
+  --main-black-text: #201A15;
+  --main-green: #03462C;
   --green-light: #2d6a3f;
   --accent: #c0392b;
   --card-bg: #f5f2eb;
@@ -18,8 +18,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: var(--bg);
-  color: var(--text);
+  background: var(--main-background);
+  color: var(--main-black-text);
   font-family: var(--font-body);
   font-size: 17px;
   line-height: 1.7;
@@ -42,11 +42,11 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--main-grey-text);
   margin-bottom: 48px;
   transition: color 0.2s;
 }
-.back-link:hover { color: var(--text); }
+.back-link:hover { color: var(--main-black-text); }
 
 
 .hero {
@@ -78,7 +78,7 @@ a { text-decoration: none; color: inherit; }
 
 .tagline {
   font-size: 17px;
-  color: var(--text-muted);
+  color: var(--main-grey-text);
   max-width: 540px;
 }
 
@@ -98,7 +98,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .bio-text p {
-  color: var(--text);
+  color: var(--main-black-text);
   margin-bottom: 24px;
   font-size: 16.5px;
   line-height: 1.8;
