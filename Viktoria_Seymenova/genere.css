@@ -3,12 +3,13 @@
   --shadow: 0 4px 24px rgba(0,0,0,0.08);
   --radius: 12px;
 
-  --main-grey-text: #6F6155;
-  --main-background: #F7F6F4;
+  --main-grey-text: #6F6155; 
+  --main-background: #F7F6F4; 
   --main-black-text: #201A15;
   --main-green: #03462C;
   --card-text: #daded7;
   --border: #d4cfc5;
+
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -21,6 +22,7 @@ body {
   font-size: 17px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+
 }
 
 img { display: block; max-width: 100%; }
@@ -40,7 +42,8 @@ a { text-decoration: none; color: inherit; }
   gap: 6px;
   font-size: 14px;
   color: var(--main-grey-text);
-  margin-bottom: 48px;
+  margin-top: 50px;
+  margin-bottom: 25px;
   transition: color 0.2s;
 }
 .back-link:hover { color: var(--main-black-text); }
@@ -75,7 +78,7 @@ a { text-decoration: none; color: inherit; }
 .tagline {
   font-size: 17px;
   color: var(--main-grey-text);
-  text-align: left;
+  text-align: center;
 }
 
 
@@ -126,7 +129,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .detail-card {
-  background: var(--card-bg);
+  background: var(--main-green);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 36px;
@@ -139,6 +142,7 @@ a { text-decoration: none; color: inherit; }
 
 .detail-card h2 {
   font-family: var(--font-display);
+  color: var(--card-text);
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 14px;
@@ -146,7 +150,7 @@ a { text-decoration: none; color: inherit; }
 
 .detail-card p {
   font-size: 15.5px;
-  color: var(--main-grey-text);
+  color: var(--card-text);
   line-height: 1.75;
 }
 
