@@ -1,9 +1,10 @@
  :root {
     --main-grey-text: #6F6155;
-    --main-background: #F7F6F4;
+    --main-background: #F4F0E6;
+    --light-background: #F7F6F4;
     --main-black-text: #201A15;
     --main-green: #03462C;
-  }/* Base Page Reset & Typography */
+  }
 body {
     margin: 0;
     padding: 0;
@@ -13,20 +14,20 @@ body {
     line-height: 1.5;
 }
 
-/* Rock Hero Banner Section */
 .hero-section-genre {
-    background-color: #f5dfcb; /* Matches the soft peach/beige background color */
+    background-color: #f5dfcb; 
     padding: 90px 6%;  
     justify-content: center;
     align-items: center;
 }
 
 .hero-container-genre {
-    max-width: 680px;          /* Constrains the text width to match the image layout */
+    max-width: 680px;      
+    margin: 0 auto;    
 }
 
 .hero-title-genre {
-    font-size: 4.5rem;         /* Large, impactful header text */
+    font-size: 4.5rem;         
     font-weight: 700;
     margin: 0 0 24px 0;
     letter-spacing: -1px;
@@ -69,7 +70,7 @@ body {
 
 .artists-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 50px 30px;
     text-align: center;
 }
@@ -86,8 +87,8 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Soft drop shadow from the design */
-    border: 4px solid white; /* White border to make it pop */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+    border: 4px solid white; 
 }
 
 .artist-name {
@@ -103,32 +104,31 @@ body {
     margin: 0;
 }
 
-/* --- Essential Albums Section --- */
 .albums-section {
-    background-color: var(--main-background); /* Slight off-white background to match the image */
+    background-color: var(--main-background); 
 }
 
 .albums-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
 }
 
 .album-card {
     background-color: white;
     border-radius: 12px;
-    overflow: hidden; /* Ensures the image doesn't break outside the rounded corners */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.06); /* Soft subtle shadow */
-    transition: transform 0.2s ease; /* Tiny animation setup for hovering */
+    overflow: hidden; 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06); 
+    transition: transform 0.2s ease; 
 }
 
 .album-card:hover {
-    transform: translateY(-5px); /* Makes card lift slightly on hover */
+    transform: translateY(-5px); 
 }
 
 .album-img {
     width: 100%;
-    height: 250px; /* Uniform height for all album covers */
+    height: 250px; 
     object-fit: cover;
     display: block;
 }
@@ -150,15 +150,15 @@ body {
     margin: 0;
 }
 
-/* --- Responsive Design (For Mobile Screens) --- */
+
 @media (max-width: 900px) {
     .artists-grid, .albums-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 600px) {
     .artists-grid, .albums-grid {
-        grid-template-columns: 1fr; /* 1 column on phones */
+        grid-template-columns: 1fr; 
     }
 }
