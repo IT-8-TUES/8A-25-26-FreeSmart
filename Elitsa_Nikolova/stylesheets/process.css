@@ -1,5 +1,19 @@
-.process-hero {
-  background: linear-gradient(to bottom, #EBE8EE 0%, #F4F0E6 100%); /* Soft purple-gray fading into your cream background */
+:root {
+    --main-grey-text: #6F6155;
+    --main-background: #F4F0E6;
+    --light-background: #F7F6F4;
+    --main-black-text: #201A15;
+    --main-green: #03462C;
+  }
+
+body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: var(--main-background);
+    }
+
+  .process-hero {
+  background: linear-gradient(to bottom, #EBE8EE 0%, var(--main-background) 100%);
   padding: 100px 20px 60px;
   text-align: center;
 }
@@ -11,7 +25,7 @@
 
 .page-title {
   font-size: 3.5rem;
-  color: #201A15;
+  color: var(--main-black-text);
   font-weight: 800;
   margin-bottom: 16px;
   letter-spacing: -0.03em;
@@ -19,13 +33,13 @@
 
 .page-subtitle {
   font-size: 1.2rem;
-  color: #6F6155;
+  color: var(--main-grey-text);
   line-height: 1.6;
 }
 
 
 .process-steps {
-  background-color: #F4F0E6;
+  background-color: var(--main-background);
   padding: 60px 20px 100px;
   display: flex;
   flex-direction: column;
@@ -46,7 +60,6 @@
   flex-direction: row-reverse;
 }
 
-/* --- THE GIANT NUMBERS --- */
 .step-number {
   font-size: 10rem;
   font-weight: 800;
@@ -65,25 +78,24 @@
 
 .step-content h2 {
   font-size: 2rem;
-  color: #201A15;
+  color: var(--main-black-text);
   font-weight: 700;
   margin-bottom: 16px;
 }
 
 .step-content p {
   font-size: 1.05rem;
-  color: #6F6155;
+  color: var(--main-grey-text);
   line-height: 1.7;
   margin-bottom: 24px;
 }
 
-/* --- THE GREEN BLOCKQUOTE --- */
 .step-quote {
   margin: 0;
   padding-left: 20px;
-  border-left: 2px solid #03462C;
+  border-left: 2px solid var(--main-green);
   font-size: 0.95rem;
-  color: #8C7F72;
+  color: var(--main-grey-text);
   font-style: italic;
   line-height: 1.6;
 }
