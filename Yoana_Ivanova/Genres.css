@@ -16,7 +16,9 @@ body {
 /* Rock Hero Banner Section */
 .hero-section-genre {
     background-color: #f5dfcb; /* Matches the soft peach/beige background color */
-    padding: 90px 6%;          /* Generous vertical and horizontal spacing */
+    padding: 90px 6%;  
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-container-genre {
@@ -37,21 +39,126 @@ body {
     margin: 0;
 }
 
-/* Famous Artists Section Heading */
-.artists-section-genre {
-    padding: 60px 6% 20px 6%;
-    background-color: var(--main-background);
+.content-section {
+    padding: 60px 6%;
 }
 
-.artists-title-genre {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0 0 10px 0;
     letter-spacing: -0.5px;
+    color: var(--main-black-text);
 }
 
-.artists-subtitle-genre {
+.section-subtitle {
     font-size: 1.15rem;
     color: var(--main-grey-text);
+    margin: 0 0 50px 0;
+}
+
+/* --- Famous Artists Section --- */
+.artists-section {
+    background-color: white;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 50px 30px;
+    text-align: center;
+}
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Soft drop shadow from the design */
+    border: 4px solid white; /* White border to make it pop */
+}
+
+.artist-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: var(--main-black-text);
+}
+
+.artist-years {
+    font-size: 0.95rem;
+    color: var(--main-grey-text);
     margin: 0;
+}
+
+/* --- Essential Albums Section --- */
+.albums-section {
+    background-color: var(--main-background); /* Slight off-white background to match the image */
+}
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 30px;
+}
+
+.album-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden; /* Ensures the image doesn't break outside the rounded corners */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06); /* Soft subtle shadow */
+    transition: transform 0.2s ease; /* Tiny animation setup for hovering */
+}
+
+.album-card:hover {
+    transform: translateY(-5px); /* Makes card lift slightly on hover */
+}
+
+.album-img {
+    width: 100%;
+    height: 250px; /* Uniform height for all album covers */
+    object-fit: cover;
+    display: block;
+}
+
+.album-info {
+    padding: 20px;
+}
+
+.album-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: var(--main-black-text);
+}
+
+.album-artist-year {
+    font-size: 0.95rem;
+    color: var(--main-grey-text);
+    margin: 0;
+}
+
+/* --- Responsive Design (For Mobile Screens) --- */
+@media (max-width: 900px) {
+    .artists-grid, .albums-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .artists-grid, .albums-grid {
+        grid-template-columns: 1fr; /* 1 column on phones */
+    }
 }
