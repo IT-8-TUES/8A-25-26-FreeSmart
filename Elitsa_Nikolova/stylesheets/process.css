@@ -1,0 +1,89 @@
+.process-hero {
+  background: linear-gradient(to bottom, #EBE8EE 0%, #F4F0E6 100%); /* Soft purple-gray fading into your cream background */
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.process-title-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  color: #201A15;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #6F6155;
+  line-height: 1.6;
+}
+
+
+.process-steps {
+  background-color: #F4F0E6;
+  padding: 60px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.step-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.step-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* --- THE GIANT NUMBERS --- */
+.step-number {
+  font-size: 10rem;
+  font-weight: 800;
+  color: #E2DDD3;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  flex-shrink: 0;
+  width: 250px;
+  text-align: center;
+}
+
+
+.step-content {
+  flex: 1; 
+}
+
+.step-content h2 {
+  font-size: 2rem;
+  color: #201A15;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.step-content p {
+  font-size: 1.05rem;
+  color: #6F6155;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* --- THE GREEN BLOCKQUOTE --- */
+.step-quote {
+  margin: 0;
+  padding-left: 20px;
+  border-left: 2px solid #03462C;
+  font-size: 0.95rem;
+  color: #8C7F72;
+  font-style: italic;
+  line-height: 1.6;
+}
