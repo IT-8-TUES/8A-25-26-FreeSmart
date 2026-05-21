@@ -52,6 +52,12 @@
       font-size: 0.9rem; 
     } 
 
+    .logo-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
     .nav-links { 
       display: flex;
       align-items: center;
