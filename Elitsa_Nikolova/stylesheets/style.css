@@ -1,0 +1,93 @@
+  :root {
+    --main-grey-text: #6F6155;
+    --main-background: #F7F6F4;
+    --main-black-text: #201A15;
+    --main-green: #03462C;
+  }
+ 
+ body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: var(--main-background);
+    }
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 75vh;
+  padding: 60px 20px;
+  position: relative;
+  
+background: linear-gradient(
+              to bottom, 
+              rgba(255, 255, 255, 0.6) 0%,
+              rgba(255, 255, 255, 0.4) 10%,
+              var(--main-background) 95%
+            ), 
+            url('/Elitsa_Nikolova/images/hero-concert.jpg');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--main-black-text);
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.highlight-green {
+  color: var(--main-green); 
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--main-grey-text);
+  line-height: 1.6;
+  max-width: 620px;
+  margin: 0;
+}
+
+.start-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--main-green);
+  color: white;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 14px rgba(4, 67, 44, 0.2);
+  transition: all 0.2s ease;
+}
+
+.start-button:hover {
+  background-color: #155840;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(4, 67, 44, 0.3);
+}
+
+.button-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.start-button:hover .button-arrow {
+  transform: translateX(4px);
+}
