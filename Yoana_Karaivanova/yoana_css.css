@@ -62,15 +62,6 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
 }
 
-.card-1950s { background-color: var(--bg-1950s); }
-.card-1960s { background-color: var(--bg-1950s); }
-.card-1970s { background-color: var(--bg-1950s); }
-.card-1980s { background-color: var(--bg-1950s); } 
-.card-1990s { background-color: var(--bg-1950s); } 
-.card-2000s { background-color: var(--bg-1950s); } 
-.card-2010s { background-color: var(--bg-1950s); } 
-.card-2020s { background-color: var(--bg-1950s); }
-
 .badge {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.06);
