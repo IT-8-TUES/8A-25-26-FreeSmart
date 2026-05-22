@@ -12,12 +12,7 @@ body {
   margin-top: 150px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   background-color: var(--main-background); 
-<<<<<<< HEAD
-  color: var(--main-black-text);            
- 
-=======
   color: var(--main-black-text);        
->>>>>>> c2253e1142fb9d6f2eb6194e093fd4e1cd7a9ae3
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
