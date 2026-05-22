@@ -8,6 +8,10 @@
     --genres-red: #ff7974;
     --main-blue: #8a8cff;
     --main-pink: #fca3d9;
+    --main-red: #ae342f;
+    --main-pink: #de4ca4;
+    --card-text: #daded7;
+   
   }
 
 .darkmode {
@@ -20,4 +24,5 @@
     --main-red: #f46c68;
     --card-text: #10100f;
     --main-pink: #e26cad;
+  
 }
