@@ -1,5 +1,6 @@
 :root {
     --main-grey-text: #6F6155;
+    --main-little-text: #454545;
     --main-background: #F4F0E6;
     --light-background: #F7F6F4;
     --main-black-text: #201A15;
@@ -8,10 +9,13 @@
     --genres-red: #ff7974;
     --main-blue: #8a8cff;
     --main-pink: #fca3d9;
+    --main-yellow: #ffcd6a;
+    --main-purple: #e79aff;
+    --main-grey: #9e9e9e;
   }
 
 .darkmode {
-    --main-grey-text: #f5f2ef;
+    --main-grey-text: #f5f3ef;
     --main-background: #161515;
     --light-background: #1a1a1a;
     --main-black-text: #f5f2ef;

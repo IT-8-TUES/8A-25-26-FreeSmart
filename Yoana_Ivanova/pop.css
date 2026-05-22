@@ -31,7 +31,7 @@ body {
 .hero-description-genre {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: var(--main-grey-text);           
+    color: var(--main-little-text);           
     margin: 0;
     text-align: center;
 }
