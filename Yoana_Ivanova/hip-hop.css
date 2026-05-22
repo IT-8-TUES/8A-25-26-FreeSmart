@@ -1,0 +1,172 @@
+:root {
+    --main-grey-text: #6F6155;
+    --main-background: #F4F0E6;
+    --light-background: #F7F6F4;
+    --main-black-text: #201A15;
+    --main-blue: #8a8cff;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--main-black-text);
+    background-color: var(--main-background);
+    line-height: 1.5;
+}
+
+.hero-section-genre {
+    background: linear-gradient(to bottom, #8a8cff 80%, #F4F0E6 100%);
+    padding: 90px 6%;  
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container-genre {
+    max-width: 680px;      
+    margin: 0 auto;   
+    text-align: center; 
+}
+
+.hero-title-genre {
+    font-size: 4.5rem;         
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    letter-spacing: -1px;
+    text-align: center; 
+}
+
+.hero-description-genre {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--main-grey-text);           
+    margin: 0;
+    text-align: center;
+}
+
+.content-section {
+    padding: 60px 6%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.5px;
+    color: var(--main-black-text);
+    text-align: center;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1.15rem;
+    color: var(--main-grey-text);
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.artists-section {
+    background-color: #F4F0E6;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px 30px;
+    text-align: center;
+}
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+    border: 4px solid white; 
+}
+
+.artist-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: var(--main-black-text);
+}
+
+.artist-years {
+    font-size: 0.95rem;
+    color: var(--main-grey-text);
+    margin: 0;
+}
+
+.albums-section {
+    background: linear-gradient(to top, #8a8cff  89%, #F4F0E6 100%);
+    background-color: var(--main-background); 
+}
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+}
+
+.album-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06); 
+    transition: transform 0.2s ease; 
+}
+
+.album-card:hover {
+    transform: translateY(-5px); 
+}
+
+.album-img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    display: block;
+}
+
+.album-info {
+    padding: 20px;
+}
+
+.album-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: var(--main-black-text);
+}
+
+.album-artist-year {
+    font-size: 0.95rem;
+    color: var(--main-grey-text);
+    margin: 0;
+}
+
+
+@media (max-width: 900px) {
+    .artists-grid, .albums-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .artists-grid, .albums-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
