@@ -1,0 +1,131 @@
+:root {
+  --main-grey-text: #6F6155;
+  --main-background: #F4F0E6;
+  --light-background: #F7F6F4;
+  --main-black-text: #201A15;
+  --main-green: #03462C;
+  
+  
+  --bg-1950s: #fff6ed;
+  --bg-1960s: #fff6ed;
+  --bg-1970s: #fdfaf2;
+  --bg-1980s: #fdf2f8;
+  --bg-1990s: #f4fbf7;
+  --bg-2000s: #f3f8f9;
+  --bg-2010s: #faf5ff;
+  --bg-2020s: #fff1f2;
+}
+
+body.darkmode {
+  --main-grey-text: #A89E95;
+  --main-background: #161515;
+  --light-background: #222020;
+  --main-black-text: #F5F2EF;
+  --main-green: #49c566;
+  
+  --bg-1950s: #2d241e;
+  --bg-1960s: #2d241e;
+  --bg-1970s: #282620;
+  --bg-1980s: #2d1e28;
+  --bg-1990s: #1e2d24;
+  --bg-2000s: #1e282d;
+  --bg-2010s: #241e2d;
+  --bg-2020s: #2d1e20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', Arial, sans-serif;
+  background-color: var(--main-background); 
+  color: var(--main-black-text);            
+  padding: 40px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--main-black-text);
+}
+
+.timeline-subtitle {
+  text-align: center;
+  color: var(--main-grey-text); 
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 40px;
+  border-left: 2px solid var(--main-grey-text); 
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -47px;
+  top: 25px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-green);
+  border-radius: 50%;
+}
+
+.timeline-card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.card-1950s { background-color: var(--bg-1950s); }
+.card-1960s { background-color: var(--bg-1950s); }
+.card-1970s { background-color: var(--bg-1950s); }
+.card-1980s { background-color: var(--bg-1950s); } 
+.card-1990s { background-color: var(--bg-1950s); } 
+.card-2000s { background-color: var(--bg-1950s); } 
+.card-2010s { background-color: var(--bg-1950s); } 
+.card-2020s { background-color: var(--bg-1950s); }
+
+.badge {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.06);
+  color: var(--main-grey-text); /* Поправено */
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.timeline-card h2 {
+  margin: 0 0 15px 0;
+  font-size: 1.5rem;
+  color: var(--main-black-text);
+}
+
+.timeline-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--main-black-text); 
+  opacity: 0.9;
+}
+
+.timeline-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
