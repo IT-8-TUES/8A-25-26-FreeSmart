@@ -1,20 +1,3 @@
-:root {
-  --main-grey-text: #6F6155;
-  --main-background: #F4F0E6;
-  --light-background: #F7F6F4;
-  --main-black-text: #201A15;
-  --main-green: #03462C;
-  --article-text: #201A15; 
-}
-
-body.darkmode {
-  --main-grey-text: #A89E95; 
-  --main-background: #161515;
-  --light-background: #222020;
-  --main-black-text: #F5F2EF;
-  --main-green: #49c566;
-  --article-text: #E0DBD5; 
-}
 
 * {
   margin: 0;
@@ -25,7 +8,7 @@ body.darkmode {
 body {
   background-color: var(--main-background);
   color: var(--main-black-text);
-  font-family: 'Manrope', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
