@@ -50,7 +50,7 @@ a { text-decoration: none; color: inherit; }
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.15em;
-  color: var(--main-pink);
+  color: var( --synthwave-pink);
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -118,7 +118,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .detail-card {
-  background: var(--main-pink);
+  background: var( --synthwave-pink);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 36px;
