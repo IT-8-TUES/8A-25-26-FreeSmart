@@ -13,20 +13,6 @@
   --card-text: #daded7;
 }
 
-.darkmode{
-  --border: #0f0f0e;
-  --shadow: 0 4px 24px rgba(0,0,0,0.08);
-  --radius: 12px;
-
-  --main-grey-text: #f5f2ef;
-  --main-background: #161515;
-  --main-black-text: #f5f2ef;
-  --main-green: #49c566;
-  --main-red: #f46c68;
-  --card-text: #10100f;
- 
-}
-
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
