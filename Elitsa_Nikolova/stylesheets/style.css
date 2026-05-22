@@ -243,3 +243,16 @@ background: linear-gradient(
     grid-template-columns: 1fr;
   }
 }
+
+/* Elements will start invisible and slightly pushed down */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+/* This class will be added by JavaScript when the element is scrolled into view */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
