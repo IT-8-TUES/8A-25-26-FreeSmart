@@ -12,6 +12,9 @@
     --main-yellow: #ffcd6a;
     --main-purple: #e79aff;
     --main-grey: #9e9e9e;
+    --main-red: #ae342f;
+    --card-text: #daded7;
+   
   }
 
 .darkmode {
@@ -21,4 +24,8 @@
     --main-black-text: #f5f2ef;
     --main-green: #49c566;
     --dark-green: #4ed36d;
+    --main-red: #f46c68;
+    --card-text: #10100f;
+    --main-pink: #e26cad;
+  
 }
