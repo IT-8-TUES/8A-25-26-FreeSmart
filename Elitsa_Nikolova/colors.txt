@@ -1,6 +1,0 @@
-Base:
--main-background: #F7F6F4
-
-Header:
--grey-text: #6F6155
--header-background: white

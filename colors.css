@@ -1,0 +1,17 @@
+:root {
+    --main-grey-text: #6F6155;
+    --main-background: #F4F0E6;
+    --light-background: #F7F6F4;
+    --main-black-text: #201A15;
+    --main-green: #03462C;
+    --dark-green: #155840;
+  }
+
+.darkmode {
+    --main-grey-text: #f5f2ef;
+    --main-background: #161515;
+    --light-background: #1a1a1a;
+    --main-black-text: #f5f2ef;
+    --main-green: #49c566;
+    --dark-green: #4ed36d;
+}
