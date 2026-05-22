@@ -15,7 +15,7 @@ body {
 }
 
 .hero-section-genre {
-    background-color: #f5dfcb; 
+    background: linear-gradient(to bottom, #e8e3d7 85%, white 100%);
     padding: 90px 6%;  
     justify-content: center;
     align-items: center;
@@ -23,7 +23,8 @@ body {
 
 .hero-container-genre {
     max-width: 680px;      
-    margin: 0 auto;    
+    margin: 0 auto;   
+    text-align: center; 
 }
 
 .hero-title-genre {
@@ -31,6 +32,7 @@ body {
     font-weight: 700;
     margin: 0 0 24px 0;
     letter-spacing: -1px;
+    text-align: center; 
 }
 
 .hero-description-genre {
@@ -38,6 +40,7 @@ body {
     line-height: 1.6;
     color: var(--main-grey-text);           
     margin: 0;
+    text-align: center;
 }
 
 .content-section {
@@ -55,15 +58,17 @@ body {
     margin: 0 0 10px 0;
     letter-spacing: -0.5px;
     color: var(--main-black-text);
+    text-align: center;
+    text-align: center;
 }
 
 .section-subtitle {
     font-size: 1.15rem;
     color: var(--main-grey-text);
     margin: 0 0 50px 0;
+    text-align: center;
 }
 
-/* --- Famous Artists Section --- */
 .artists-section {
     background-color: white;
 }
@@ -105,6 +110,7 @@ body {
 }
 
 .albums-section {
+    background: linear-gradient(to top, #e8e3d7 89%, white 100%);
     background-color: var(--main-background); 
 }
 
@@ -162,3 +168,5 @@ body {
         grid-template-columns: 1fr; 
     }
 }
+
+
